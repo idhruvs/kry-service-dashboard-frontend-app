@@ -1,0 +1,136 @@
+:root {
+  /* COLORS */
+  --bg: #E7FAFF;
+  --blue: #012945;
+  --white: #ffffff;
+  --error: #DA364E;
+  --disabled: #E6E6E9;
+  --success: rgb(103,187,107);
+  --border: #ccc;
+  --black: #000;
+
+  --input-color: #7B98A8;
+
+  /* FONT SIZES */
+  --font-small: 0.8rem;
+  --font-medium: 1rem;
+  --font-large: 1.2rem;
+  --font-xlarge: 1.5rem;
+  --font-xxlarge: 2rem;
+
+  /* SPACING */
+  --space: 8px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* overflow: hidden; */
+  background: var(--bg);
+}
+
+/* Global Styles */
+
+.module-wrapper {
+  padding: calc(var(--space) * 8);
+  margin: auto;
+  max-width: 1140px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+input, textarea{
+  display: block;
+  width: 90%;
+  padding: .5rem 1rem .5rem 1rem;
+  border:0;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 16px 0px;
+  border-radius: 25px;
+  background-color: #EDEEF1;
+}
+
+input[type="submit"] {
+  margin: 0;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: var(--input-color);
+}
+
+input::-moz-placeholder {
+  color: var(--input-color);
+}
+
+input:-ms-input-placeholder {
+  color:var(--input-color);
+}
+
+input::-ms-input-placeholder {
+  color:var(--input-color);
+}
+
+input::placeholder {
+  color:var(--input-color);
+}
+
+form.submitted input:invalid {
+  background-color: lighten(var(--error), 50%)
+}
+
+label{
+  display: none;
+}
+
+.btn-group{
+  display: flex;
+  margin-top: calc(var(--space)*3);
+}
+
+.btn-group .btn {
+  margin-right: var(--space);
+}
+
+.btn {
+  border: none;
+  margin-right: 16px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  /* height: 32px; */
+  background-color:#004484 ;
+  color: white;
+  font-size: 1rem;
+  width: auto;
+}
+
+.icon {
+  font-size: var(--font-xxlarge);
+  cursor: pointer;
+}
+
+.font-medium {
+  font-size: var(--font-large) !important;
+}
+
+.danger {
+  color: var(--error);
+}
+
+.text-label {
+  font-weight: lighter;
+}
+
+.multiline {
+  line-height: 40px;
+}
+
