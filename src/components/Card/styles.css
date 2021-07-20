@@ -6,7 +6,6 @@
   overflow: hidden;
   background: var(--white);
   box-shadow: 0 0 29px 0 rgb(18 66 101 / 8%);
-  transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
   margin-bottom: 15px;
@@ -16,8 +15,7 @@
 }
 
 .card-wrapper:hover{
-  transition: transform 1s ease;
-  transform: translateZ(0) scale(1);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .card-header {
